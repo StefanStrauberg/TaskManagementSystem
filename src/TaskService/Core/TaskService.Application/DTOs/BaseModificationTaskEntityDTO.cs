@@ -1,9 +1,6 @@
-namespace TaskService.Application.DTOs.TaskEntityDTOs;
+namespace TaskService.Application.DTOs;
 
-/// <summary>
-/// Represents a base task entity DTO with base properties.
-/// </summary>
-public class BaseTaskEntityDTO : IMapWith<TaskEntity>
+public class BaseModificationTaskEntityDTO : IMapWith<TaskEntity>
 {
   /// <summary>
   /// Gets or sets the name of the task.
@@ -58,9 +55,10 @@ public class BaseTaskEntityDTO : IMapWith<TaskEntity>
   /// Specifies rules for property transformation when converting TaskEntity to BaseTaskEntityDTO.
   /// </summary>
   /// <param name="config">The Mapster configuration object used for defining mappings.</param>
+
   void IMapWith<TaskEntity>.Mapping(TypeAdapterConfig config)
   {
-    config.NewConfig<TaskEntity, BaseTaskEntityDTO>()
+    config.NewConfig<BaseModificationTaskEntityDTO, TaskEntity>()
           .Map(dst => dst.Name, src => src.Name)
           .Map(dst => dst.Description, src => src.Description)
           .Map(dst => dst.Status, src => src.Status)

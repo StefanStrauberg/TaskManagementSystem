@@ -72,9 +72,11 @@ public interface IGenericRepository<T>
   /// <summary>
   /// Asynchronously determines whether any entity exists in the repository by its identifier.
   /// </summary>
+  /// <param name="id">The unique identifier of the entity.</param>
   /// <param name="token">A token to cancel the operation.</param>
   /// <returns><c>true</c> if an entity exists; otherwise, <c>false</c>.</returns>
-  Task<bool> AnyByIdAsync(CancellationToken token);
+  Task<bool> AnyByIdAsync(Guid id,
+                          CancellationToken token);
 
   /// <summary>
   /// Asynchronously retrieves the total count of all entities in the repository.

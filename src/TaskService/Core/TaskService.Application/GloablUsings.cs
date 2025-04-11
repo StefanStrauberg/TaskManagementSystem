@@ -12,3 +12,8 @@ global using System.Text;
 global using TaskService.Application.Middleware;
 global using BuildingBlocks.Mapping;
 global using Mapster;
+global using BuildingBlocks.CQRS;
+global using TaskService.Application.DTOs;
+global using MediatR;
+global using TaskService.Application.Contracts.Repositories;
+global using TaskService.Application.Models;

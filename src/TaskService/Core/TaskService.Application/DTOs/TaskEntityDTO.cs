@@ -1,4 +1,4 @@
-namespace TaskService.Application.DTOs.TaskEntityDTOs;
+namespace TaskService.Application.DTOs;
 
 /// <summary>
 /// Represents a task entity DTO with detailed properties.
