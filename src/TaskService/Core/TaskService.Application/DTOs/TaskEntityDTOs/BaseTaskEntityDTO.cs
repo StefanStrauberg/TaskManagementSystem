@@ -3,8 +3,14 @@ namespace TaskService.Application.DTOs.TaskEntityDTOs;
 /// <summary>
 /// Represents a base task entity DTO with base properties.
 /// </summary>
-public class BaseTaskEntityDTO
+public class BaseTaskEntityDTO : IMapWith<TaskEntity>
 {
+  /// <summary>
+  /// Gets or sets the name of the task.
+  /// Provides the name of the task's purpose.
+  /// </summary>
+  public string Name { get; set; } = string.Empty;
+
   /// <summary>
   /// Gets or sets the description of the task.
   /// Provides details about the task's purpose or requirements.
@@ -42,8 +48,26 @@ public class BaseTaskEntityDTO
   public string Author { get; set; } = string.Empty;
 
   /// <summary>
-  /// Gets or sets the name or identifier of the contractor assigned to the task.
+  /// Gets or sets the name or identifier of the Executor assigned to the task.
   /// Represents the person responsible for performing the task.
   /// </summary>
-  public string Contractor { get; set; } = string.Empty;
+  public string Executor { get; set; } = string.Empty;
+
+  /// <summary>
+  /// Defines the mapping between BaseTaskEntityDTO and TaskEntity using Mapster.
+  /// Specifies rules for property transformation when converting TaskEntity to BaseTaskEntityDTO.
+  /// </summary>
+  /// <param name="config">The Mapster configuration object used for defining mappings.</param>
+  void IMapWith<TaskEntity>.Mapping(TypeAdapterConfig config)
+  {
+    config.NewConfig<TaskEntity, BaseTaskEntityDTO>()
+          .Map(dst => dst.Name, src => src.Name)
+          .Map(dst => dst.Description, src => src.Description)
+          .Map(dst => dst.Status, src => src.Status)
+          .Map(dst => dst.Priority, src => src.Priority)
+          .Map(dst => dst.Started, src => src.Started)
+          .Map(dst => dst.Deadline, src => src.Deadline)
+          .Map(dst => dst.Author, src => src.Author)
+          .Map(dst => dst.Executor, src => src.Executor);
+  }
 }

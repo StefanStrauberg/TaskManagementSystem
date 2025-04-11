@@ -6,6 +6,12 @@ namespace TaskService.Domain;
 public class TaskEntity : BaseEntity
 {
   /// <summary>
+  /// Gets or sets the name of the task.
+  /// Provides the name of the task's purpose.
+  /// </summary>
+  public string Name { get; set; } = string.Empty;
+
+  /// <summary>
   /// Gets or sets the description of the task.
   /// Provides details about the task's purpose or requirements.
   /// </summary>
@@ -42,8 +48,8 @@ public class TaskEntity : BaseEntity
   public string Author { get; set; } = string.Empty;
 
   /// <summary>
-  /// Gets or sets the name or identifier of the contractor assigned to the task.
+  /// Gets or sets the name or identifier of the Executor assigned to the task.
   /// Represents the person responsible for performing the task.
   /// </summary>
-  public string Contractor { get; set; } = string.Empty;
+  public string Executor { get; set; } = string.Empty;
 }

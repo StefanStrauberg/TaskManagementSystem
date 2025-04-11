@@ -10,3 +10,5 @@ global using BuildingBlocks.Models.Exceptions;
 global using ApplicationException = BuildingBlocks.Models.Exceptions.ApplicationException;
 global using System.Text;
 global using TaskService.Application.Middleware;
+global using BuildingBlocks.Mapping;
+global using Mapster;
