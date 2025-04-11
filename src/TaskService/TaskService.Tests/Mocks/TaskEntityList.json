@@ -1,0 +1,41 @@
+[
+  {
+    "Id": "d4e83c9a-2c46-4918-8ef7-b5b7c1a1ec8a",
+    "Name": "Design Database Schema",
+    "Description": "Create the database schema for the new project.",
+    "Status": "Open",
+    "Priority": "High",
+    "Started": "2025-04-01T10:00:00",
+    "Deadline": "2025-04-06T10:00:00",
+    "Author": "John Doe",
+    "Executor": "Jane Smith",
+    "Created": "2025-04-01T10:00:00",
+    "Updated": "2025-04-01T12:00:00"
+  },
+  {
+    "Id": "ac294d36-5434-4487-a429-1fdd94baf514",
+    "Name": "Develop API Endpoints",
+    "Description": "Implement RESTful API endpoints for the user module.",
+    "Status": "InProgress",
+    "Priority": "Medium",
+    "Started": "2025-04-03T08:00:00",
+    "Deadline": "2025-04-10T18:00:00",
+    "Author": "Alice Johnson",
+    "Executor": "Bob Brown",
+    "Created": "2025-04-03T08:00:00",
+    "Updated": "2025-04-03T11:00:00"
+  },
+  {
+    "Id": "cc96ef79-7603-4f63-bf11-c0fa73c805f8",
+    "Name": "Write Unit Tests",
+    "Description": "Ensure code quality by writing unit tests for the payment service.",
+    "Status": "Completed",
+    "Priority": "Low",
+    "Started": "2025-03-25T09:00:00",
+    "Deadline": "2025-04-01T14:00:00",
+    "Author": "David Clark",
+    "Executor": "Eve Adams",
+    "Created": "2025-03-25T09:00:00",
+    "Updated": "2025-04-01T14:00:00"
+  }
+]

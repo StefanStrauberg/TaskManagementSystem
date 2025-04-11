@@ -1,0 +1,9 @@
+global using Moq;
+global using TaskService.Application.Contracts.Repositories;
+global using TaskService.Domain;
+global using Newtonsoft.Json;
+global using TaskService.Application.DTOs;
+global using TaskService.Application.Features.Commands;
+global using TaskService.Tests.Mocks;
+global using BuildingBlocks.CQRS;
+global using MediatR;

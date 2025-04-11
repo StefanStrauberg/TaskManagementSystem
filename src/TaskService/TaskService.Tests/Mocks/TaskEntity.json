@@ -1,0 +1,13 @@
+{
+  "Id": "d4e83c9a-2c46-4918-8ef7-b5b7c1a1ec8a",
+  "Name": "Design Database Schema",
+  "Description": "Create the database schema for the new project.",
+  "Status": "Open",
+  "Priority": "High",
+  "Started": "2025-04-01T10:00:00",
+  "Deadline": "2025-04-06T10:00:00",
+  "Author": "John Doe",
+  "Executor": "Jane Smith",
+  "Created": "2025-04-01T10:00:00",
+  "Updated": "2025-04-01T12:00:00"
+}
