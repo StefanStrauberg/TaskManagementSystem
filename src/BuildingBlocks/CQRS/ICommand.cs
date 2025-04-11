@@ -1,4 +1,4 @@
-namespace TaskService.Application.Contracts.CQRS;
+namespace BuildingBlocks.CQRS;
 
 /// <summary>
 /// Represents a marker interface for commands without a response type.

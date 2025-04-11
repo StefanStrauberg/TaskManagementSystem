@@ -45,7 +45,7 @@ public interface IGenericRepository<T>
   void ReplaceOne(T entity);
 
   /// <summary>
-/// Replaces multiple entities in the repository with updated versions.
+  /// Replaces multiple entities in the repository with updated versions.
   /// </summary>
   /// <param name="entities">The updated entities to replace.</param>
   void ReplaceMany(IEnumerable<T> entities);

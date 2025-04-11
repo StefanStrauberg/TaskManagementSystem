@@ -1,4 +1,4 @@
-namespace TaskService.Application.Helpers;
+namespace BuildingBlocks.Models;
 
 /// <summary>
 /// Represents a set of request parameters for paging, filtering, and sorting data.
@@ -17,7 +17,7 @@ public class RequestParameters
   /// </summary>
   public int PageNumber { get; set; } = 1;
 
-  private int _pageSize = 10;
+  private int _pageSize = 100;
 
   /// <summary>
   /// Gets or sets the size of the page, determining how many items are retrieved per page.

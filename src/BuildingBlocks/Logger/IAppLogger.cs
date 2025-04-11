@@ -1,4 +1,4 @@
-namespace TaskService.Application.Contracts.Logger;
+namespace BuildingBlocks.Logger;
 
 /// <summary>
 /// Interface for an application-wide logger that supports logging information, warnings, and errors.

@@ -1,4 +1,4 @@
-namespace TaskService.Application.Contracts.CQRS;
+namespace BuildingBlocks.CQRS;
 
 /// <summary>
 /// Represents a handler interface for queries.
